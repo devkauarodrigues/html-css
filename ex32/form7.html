@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php">
+        <p>
+            <label for="iest">Estado</label>
+
+<select name="estado" id="iest">
+    
+    
+                <option value="" style="text-align: center;">---Escolha---</option>
+                <optgroup>
+                    <option value="SP">São Paulo</option>
+                    <option value="SP">Rio de Janeiro</option>
+                    <option value="SP">Minas Gerais</option>
+                    <option value="SP">Santa Catarina</option>
+                    <option value="SP">Bahia</option>
+                </optgroup>
+            </p>
+</select>
+        <p>
+            <label for="iprof">Profissões</label>
+            <input type="text" name="prof" id="iprof" list="lsprof">
+                    <datalist id="lsprof">
+                            <option>Advogado</option>
+                            <option>Professor</option>
+                            <option>Desenvolvedor</option>
+                            <option>Lixeiro</option>
+
+                            <!--
+                            TIRE O VALUE DE OPTION, POR ALGUM MOTIVO SÓ FUNCIONA SEM OU COM VALOR
+                            -->>
+                    </datalist>
+        </p>
+        
+        <p>
+            <label for="imsg">Mensagem</label> <br>
+            <textarea name="Mensagem" id="imsg" cols="20" rows="10"></textarea> 
+
+        </p>
+
+        
+
+    </form>
+</body>
+</html>
