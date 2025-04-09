@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                
+            </div>
+            <div id="formulario">
+                <h1>Faça login no site</h1>
+                <p>Faça parte da nossa comunidade</p>
+                <form action="cadastro.php" method="post" autocomplete="on">
+
+                    <div class="campo">
+                            <span class="material-symbols-outlined">person</span>
+                            <input type="email" name="email" id="iemail" required minlength="5" placeholder="seu E-mail aqui" autocomplete="email">
+                            <label for="iemail">Login</label>
+                    </div>
+
+                    <div class="campo">
+
+                            <span class="material-symbols-outlined">vpn_key</span> 
+                            <input type="password" name="senha" id="isenha" required placeholder="sua senha aqui" autocomplete="current-password">
+                            <label for="isenha">Senha</label>
+                    </div>
+
+                   
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci.html" class="botao">
+                            Esqueci a senha 
+                        </a>
+                   
+                </form>
+            </div>
+        
+        
+        </section>
+    </main>
+</body>
+</html>
